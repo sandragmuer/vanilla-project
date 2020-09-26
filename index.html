@@ -9,6 +9,8 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     <link rel="stylesheet" href="src/style.css" class="style" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
@@ -20,13 +22,11 @@
     <div class="container">
       <div class="weather-app-wrap">
         <div class="weather-app">
-          <h1>
-            Right now in
-            <span class="header-location">Walenstadt</span>
-            it's
-            <span class="header-weather">rainy</span>
-          </h1>
-          <h2>Saturday, 14:00</h2>
+          <h1 id="city"></h1>
+          <ul>
+            <li>Saturday, 14:00</li>
+            <li id="description"></li>
+          </ul>
           <div class="row">
             <div class="col-4">
               <img
@@ -35,14 +35,13 @@
               />
             </div>
             <div class="col-4">
-              <strong>9</strong>
+              <strong id="temperature"></strong>
               <span class="units">°C | <a href="#">°F</a> </span>
             </div>
             <div class="col-4">
               <ul>
-                <li>Precipitation: 94%</li>
-                <li>Humidity: 69%</li>
-                <li>Wind: 14 km/h</li>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> km/h</li>
               </ul>
             </div>
           </div>
@@ -52,7 +51,7 @@
             href="https://github.com/sandragmuer/vanilla-project"
             target="_blank"
           >
-            Open source code
+            Open-source code
           </a>
           by Sandra Gmür
         </small>
