@@ -37,6 +37,7 @@ function displayTemperature(response) {
 }
 
 let apiKey = "9a086176ea63e575b3eb398ef6d24568";
-let apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=Walenstadt&appid=${apiKey}&units=metric`;
+let city = "Paris";
+let apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
 axios.get(apiUrl).then(displayTemperature);
