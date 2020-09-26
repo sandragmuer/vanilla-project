@@ -2,18 +2,6 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
-.weather-app {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 30px;
-  border: 1px solid #e3e3e3;
-  border-radius: 10px;
-}
-
-.header-location {
-  color: rgb(66, 65, 65);
-}
-
 h1 {
   color: #a8a8a8;
   font-size: 30px;
@@ -42,4 +30,32 @@ li {
   padding: 0;
   font-size: 15px;
   font-weight: 100;
+}
+
+.weather-app-wrap {
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+.weather-app {
+  padding: 30px;
+  border: 1px solid #e3e3e3;
+  border-radius: 10px;
+}
+
+.header-location {
+  color: rgb(66, 65, 65);
+}
+
+.col-4 strong {
+  color: rgb(66, 65, 65);
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.units {
+  position: relative;
+  font-size: 15px;
+  top: -24px;
 }
